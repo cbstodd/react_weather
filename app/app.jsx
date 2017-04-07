@@ -1,7 +1,24 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+var React = require('react'),
+    ReactDOM = require('react-dom'),
+    Main = require('Main'),
+    Nav = require('Nav');
 
+var { 
+  Route, 
+  Router, 
+  IndexRoute, 
+  hashHistory 
+  } = require('react-router');
+  
 ReactDOM.render(
-  <h1>Boilerplate app!</h1>,
+  <Router history={hashHistory}>
+      <Route path="/" component={Main}></Route>
+
+  </Router>,
+
   document.getElementById('app')
 );
+
+
+
+
