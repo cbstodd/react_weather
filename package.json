@@ -11,6 +11,7 @@
   "author": "Andrew Mead",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.16.1",
     "bootstrap": "^4.0.0-alpha.6",
     "express": "^4.13.4",
     "react": "^0.14.7",
