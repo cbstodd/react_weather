@@ -1,13 +1,14 @@
 const React = require('react'),
-      Nav = require('Nav');
+      Nav   = require('Nav');
 
 const Main = React.createClass({
-    render: function (){
+    render: function(){
         return (
-            <div>
-                <Nav/>
-                <h2>Main Component!</h2>
-            </div>
+          <div>
+              <Nav/>
+              <h2>Main Component!</h2>
+              {this.props.children}              
+          </div>
         )
     }
 });
