@@ -1,15 +1,19 @@
 {
-  "name": "boilerplate",
+  "name": "reactjs-temp",
   "version": "1.0.0",
   "description": "Simple react app",
   "main": "index.js",
+  "engines": {
+    "node": "6.10.x",
+    "npm": "3.10.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "nodemon": "nodemon server.js",
     "webpack": "webpack"
   },
-  "author": "Andrew Mead",
+  "author": "Colin Stodd (http://www.colinstodd.com)",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.16.1",
