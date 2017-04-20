@@ -1,7 +1,7 @@
 let React = require('react');
 
 let WeatherForm = React.createClass({
-    onFormSubmit: function(e){
+    onFormSubmit: function( e ){
         // Prevents page from reloading
         e.preventDefault();
 
@@ -17,17 +17,24 @@ let WeatherForm = React.createClass({
         }
 
     },
+
     render: function(){
         return (
-            <div>
-                <form onSubmit={this.onFormSubmit}>
-                    <input type="text" ref="location"/>
-                    <button> Get Weather </button>
-                </form>
-            </div>
+          <div className="container">
+              <form onSubmit={this.onFormSubmit}>
+                  <div className="input-group">
+                <span className="input-group-btn">
+                    <button className="btn btn-secondary" type="button">Get weather</button>
+                </span>
+                      <input type="text" className="form-control" placeholder="Search city" ref="location"></input>
+                  </div>
+              </form>
+          </div>
         )
     }
 
 });
 
+
 module.exports = WeatherForm;
+

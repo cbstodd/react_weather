@@ -2,7 +2,9 @@ let React = require('react');
 
 const Examples = ( props ) =>{
     return (
-      <h3>Examples</h3>
+      <div className="container">
+          <h3>Examples</h3>
+      </div>
     )
 };
 
