@@ -5,8 +5,12 @@ const Main = ( props ) =>{
     return (
       <div>
           <Nav/>
-          <div className="container"><h2>Main Component!</h2></div>
-          {props.children}
+          <div className="container text-center"><h2>Main Component!</h2></div>
+          <div className="row">
+              <div className="col-sm-3"></div>
+              <div className="col-sm-6">{props.children}</div>
+              <div className="col-sm-3"></div>
+          </div>
       </div>
     )
 };

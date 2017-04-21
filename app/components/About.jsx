@@ -3,8 +3,8 @@ let React = require('react');
 const About = ( props ) =>{
     return (
       <div className="container">
-          <h3>About</h3>
-          <p>Welcome to the about page</p>
+          <h1 className="text-center">About</h1>
+          <p className="text-center">Welcome to the about page</p>
       </div>
     )
 };
