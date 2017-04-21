@@ -3,5 +3,5 @@ node_modules/
 .vscode/
 
 npm-debug.log.339566418
-public/bundle.js
-public/bundle.js/
+#public/bundle.js
+#public/bundle.js/
