@@ -10,7 +10,7 @@ const Nav = React.createClass({
     render: function(){
         return (
           <div>
-              <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+              <nav className="navbar navbar-toggleable-md navbar-light bg-info">
 
                   <div className="container">
                       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@ const Nav = React.createClass({
                           </ul>
                           <form className="form-inline my-2 my-lg-0" onSubmit={this.onSearch}>
                               <input className="form-control mr-sm-2" type="search" placeholder="Search city"/>
-                              <button className="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                              <button className="btn btn-outline-default my-2 my-sm-0" type="submit">Search</button>
                           </form>
                       </div>
                   </div>
