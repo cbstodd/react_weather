@@ -1,5 +1,5 @@
-const React = require('react'),
-      Nav   = require('Nav');
+const React  = require('react'),
+      Nav    = require('Nav');
 
 const Main = ( props ) =>{
     return (

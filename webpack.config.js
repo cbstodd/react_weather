@@ -1,21 +1,21 @@
 let webpack = require('webpack');
 
 module.exports = {
-    entry:   [
+    entry:     [
         './app/app.jsx'
     ],
     externals: {},
-    plugins: [
-      new webpack.ProvidePlugin({
-          '$': 'jquery',
-          'jQuery': 'jquery'
-      })
+    plugins:   [
+        new webpack.ProvidePlugin({
+            '$':      'jquery',
+            'jQuery': 'jquery'
+        })
     ],
-    output:  {
+    output:    {
         path:     __dirname,
         filename: './public/bundle.js'
     },
-    resolve: {
+    resolve:   {
         root:       __dirname,
         alias:      {
             Main:           'app/components/Main.jsx',
@@ -29,18 +29,22 @@ module.exports = {
         },
         extensions: ['', '.js', '.jsx']
     },
-    module:  {
+    module:    {
         loaders: [
             {
                 loader:  'babel-loader',
                 query:   {
                     presets: ['react', 'es2015', 'stage-0']
                 },
-                test:    /\.jsx?$/,
+                test:    [/\.jsx?$/, /\.css$/],
                 exclude: /(node_modules|bower_components)/
+            },
+            {
+                test: /\.css?$/,
+                loader: 'style!css' // This are the loaders
             }
         ]
     },
-    watch:   true,
-    devtool: 'cheap-module-eval-source-map'
+    watch:     true,
+    devtool:   'cheap-module-eval-source-map'
 };

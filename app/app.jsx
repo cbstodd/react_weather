@@ -3,12 +3,13 @@ const React    = require('react'),
       Main     = require('Main'),
       Weather  = require('Weather'),
       About    = require('About'),
-      Examples = require('Examples');
+      Examples = require('Examples'),
+      styles   = require('../public/css/main.css');
+
 
 const { Route, Router, IndexRoute, hashHistory } = require('react-router');
 
 ReactDOM.render(
-
   <Router history={hashHistory}>
       <Route path="/" component={Main}>
           <Route path="about" component={About}/>
@@ -17,7 +18,7 @@ ReactDOM.render(
       </Route>
   </Router>,
 
-document.getElementById('app')
+  document.getElementById('app')
 );
 
 
