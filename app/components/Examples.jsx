@@ -7,19 +7,13 @@ const Examples = ( props ) =>{
           <div className="text-center">
               <h1>Examples</h1>
               <p>Welcome to the example locations to try out:</p>
-          </div>
-          <ol>
-              <li>
-                  <Link to='/?location=Annapolis'>Annapolis, MD</Link>
-              </li>
-              <li>
-                  <Link to='/?location=Miami'>Miami, FL</Link>
-              </li>
-              <li>
-                  <Link to='/?location=Boulder'>Boulder, CO</Link>
-              </li>
-          </ol>
 
+              <div className="list-group">
+                  <Link className="list-group-item list-group-item-action" to='/?location=Annapolis'>Annapolis, MD</Link>
+                  <Link className="list-group-item list-group-item-action" to='/?location=Miami'>Miami, FL</Link>
+                  <Link className="list-group-item list-group-item-action" to='/?location=Boulder'>Boulder, CO</Link>
+              </div>
+          </div>
       </div>
     )
 };

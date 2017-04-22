@@ -6,9 +6,9 @@ const Main = ( props ) =>{
       <div>
           <Nav/>
           <div className="row">
-              <div className="col-sm-3"></div>
-              <div className="col-sm-6">{props.children}</div>
-              <div className="col-sm-3"></div>
+              <div className="col-md-2"></div>
+              <div className="col-md-8">{props.children}</div>
+              <div className="col-md-2"></div>
           </div>
       </div>
     )
