@@ -21,6 +21,7 @@ let WeatherForm = React.createClass({
     render: function(){
         return (
           <div className="container">
+              <h1 className="text-center">Search Weather</h1>
               <form onSubmit={this.onFormSubmit}>
                   <div className="input-group">
                           <span className="input-group-btn">

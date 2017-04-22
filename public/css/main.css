@@ -3,5 +3,17 @@ body {
 }
 
 .navbar {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
+
+h1 {
+   color: #5BC0DE;
+}
+
+a:link {
+    color: #5BC0DE;
+}
+a:visited {
+    color: #5BC0DE;
+}
+

@@ -46,11 +46,3 @@ const Nav = React.createClass({
 });
 
 module.exports = Nav;
-
-let old = (
-  <div>
-      <h2>Nav Component!</h2>
-
-
-  </div>
-);
