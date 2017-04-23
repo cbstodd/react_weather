@@ -6,12 +6,14 @@ const Examples = ( props ) =>{
       <div className="container">
           <div className="text-center">
               <h1>Examples</h1>
-              <p>Welcome to the example locations to try out:</p>
+              <p>Location examples to try:</p>
 
               <div className="list-group">
-                  <Link className="list-group-item list-group-item-action" to='/?location=Annapolis'>Annapolis, MD</Link>
-                  <Link className="list-group-item list-group-item-action" to='/?location=Miami'>Miami, FL</Link>
-                  <Link className="list-group-item list-group-item-action" to='/?location=Boulder'>Boulder, CO</Link>
+                  <Link className="list-group-item list-group-item-action" to='/?location=Annapolis, MD'>Annapolis, MD</Link>
+                  <Link className="list-group-item list-group-item-action" to='/?location=Miami, FL'>Miami, FL</Link>
+                  <Link className="list-group-item list-group-item-action" to='/?location=Boulder, CO'>Boulder, CO</Link>
+                  <Link className="list-group-item list-group-item-action" to='/?location=London, UK'>London, UK</Link>
+                  <Link className="list-group-item list-group-item-action" to='/?location=Paris'>Paris</Link>
               </div>
           </div>
       </div>
