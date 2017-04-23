@@ -1,11 +1,14 @@
 const { Route, Router, IndexRoute, hashHistory } = require('react-router');
-const React        = require('react'),
-      ReactDOM     = require('react-dom'),
-      Main         = require('Main'),
-      Weather      = require('Weather'),
-      About        = require('About'),
-      Examples     = require('Examples'),
-      styles       = require('app/css/main.css');
+const React       = require('react'),
+      ReactDOM    = require('react-dom'),
+      Main        = require('Main'),
+      Weather     = require('Weather'),
+      About       = require('About'),
+      Examples    = require('Examples'),
+      styles      = require('app/css/main.css'),
+      FontAwesome = require('react-fontawesome');
+
+
 
 ReactDOM.render(
   <Router history={hashHistory}>
