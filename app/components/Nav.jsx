@@ -27,12 +27,12 @@ const Nav = React.createClass({
                           <span className="navbar-toggler-icon"></span>
                       </button>
 
-                      <span className="navbar-brand">ReactWeather</span>
+                      <span className="navbar-brand">WeatherSearch</span>
 
                       <div className="collapse navbar-collapse" id="navbarNav">
                           <ul className="navbar-nav mr-auto">
                               <li className="nav-item">
-                                  <IndexLink className="nav-link" to="/" activeClassName="active" activeStyle={{ fontWeight: 'bold' }}>Get weather</IndexLink>
+                                  <IndexLink className="nav-link" to="/" activeClassName="active" activeStyle={{ fontWeight: 'bold' }}>Get Temp</IndexLink>
                               </li>
 
                               <li className="nav-item">
