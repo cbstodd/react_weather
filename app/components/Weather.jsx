@@ -19,7 +19,9 @@ let Weather = React.createClass({
 
         this.setState({
             isLoading: true,
-            errorMsg:  undefined
+            errorMsg:  undefined,
+            location:  undefined,
+            temp:      undefined
         });
 
 
@@ -39,6 +41,26 @@ let Weather = React.createClass({
 
     },
 
+    // Pulls search location from form.
+    componentDidMount: function(){
+        let location = this.props.location.query.location;
+
+        if (location && location.length > 0){
+            this.handelSearch(location);
+            window.location.hash = '#/';
+        }
+    },
+
+    // Pulls new location from search and assigns it to location.
+    componentWillReceiveProps: function( newProps ){
+        let location = newProps.location.query.location;
+
+        if (location && location.length > 0){
+            this.handelSearch(location);
+            window.location.hash = '#/';
+        }
+    },
+
     render: function(){
         let { isLoading, temp, location, errorMsg } = this.state;
 
@@ -53,7 +75,7 @@ let Weather = React.createClass({
         function renderError(){
             if (typeof errorMsg === 'string'){
                 return (
-                  alert("That was not a valid city, please try again.")
+                  alert('That was not a valid city, please try again.')
                 )
             }
         }

@@ -4,9 +4,18 @@ const React               = require('react'),
 const Nav = React.createClass({
     onSearch: function( e ){
         e.preventDefault();
-        console.log('Not yet wired');
-    },
 
+        let location = this.refs.search.value;
+        // Assigns search result to location.
+        let encodedLocation = encodeURIComponent(location);
+
+        // Clears the field.
+        if (location.length > 0){
+            this.refs.search.value = '';
+            // Directs url to home page with new encoded search result.
+            window.location.hash = '#/?location=' + encodedLocation;
+        }
+    },
 
     render: function(){
         return (
@@ -35,7 +44,7 @@ const Nav = React.createClass({
                               </li>
                           </ul>
                           <form className="form-inline my-2 my-lg-0" onSubmit={this.onSearch}>
-                              <input className="form-control mr-sm-2" type="search" placeholder="Search city"/>
+                              <input className="form-control mr-sm-2" type="search" placeholder="Search city" ref="search"/>
                               <button className="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
                           </form>
                       </div>
