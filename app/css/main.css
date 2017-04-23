@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.navbar {
+    margin-bottom: 60px;
+}
+
+h1 {
+   color: #5BC0DE;
+}
+
+a:link {
+    color: #5BC0DE;
+}
+a:visited {
+    color: #5BC0DE;
+}
+
+.weather-message {
+    padding-top: 30px;
+}
+
+div.alert {
+    padding: 70px;
+}
+input[type=search]{
+    background-color: #f8f8f8;
+}
