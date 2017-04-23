@@ -1,0 +1,45 @@
+/*
+Error: Invalid US-ASCII character "\xE2"
+        on line 70 of intro.sass
+
+65:   &.scroll-page
+66:     .scroll-box
+67:       overflow: hidden
+68: 
+69:     &:after
+70:       content: "↕ scroll the page ↕"
+71: 
+72:   &:after
+73:     content: "↕ scroll this area ↕"
+74:     position: absolute
+75:     bottom: 25px
+
+Backtrace:
+intro.sass:70
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/util.rb:1297:in `block in find_encoding_error'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each_with_index'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `find_encoding_error'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/util.rb:905:in `check_sass_encoding'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:436:in `check_encoding!'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:392:in `_to_tree'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/opt/rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/local/opt/rbenv/versions/2.2.2/bin/sass:23:in `load'
+/usr/local/opt/rbenv/versions/2.2.2/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE2\"\A         on line 70 of intro.sass\A \A 65:   &.scroll-page\A 66:     .scroll-box\A 67:       overflow: hidden\A 68: \A 69:     &:after\A 70:       content: \"↕ scroll the page ↕\"\A 71: \A 72:   &:after\A 73:     content: \"↕ scroll this area ↕\"\A 74:     position: absolute\A 75:     bottom: 25px"; }
