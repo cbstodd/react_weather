@@ -17,7 +17,10 @@ let Weather = React.createClass({
     handelSearch: function( location ){
         let _this = this;
 
-        this.setState({ isLoading: true });
+        this.setState({
+            isLoading: true,
+            errorMsg:  undefined
+        });
 
 
         //Gets and Sets temp/location, or error
@@ -27,16 +30,17 @@ let Weather = React.createClass({
                 temp:      temp,
                 isLoading: false
             });
-        }, function( errorMsg ){
-            _this.setState({ isLoading: false });
-            alert(`${location} is not a known city`);
-            console.log(`ERROR: ${errorMsg}`);
+        }, function( e ){
+            _this.setState({
+                isLoading: false,
+                errorMsg:  e.message
+            });
         });
 
     },
 
     render: function(){
-        let { isLoading, temp, location } = this.state;
+        let { isLoading, temp, location, errorMsg } = this.state;
 
         function renderMessage(){
             if (isLoading){
@@ -46,10 +50,19 @@ let Weather = React.createClass({
             }
         }
 
+        function renderError(){
+            if (typeof errorMsg === 'string'){
+                return (
+                  alert("That was not a valid city, please try again.")
+                )
+            }
+        }
+
         return (
           <div>
               <WeatherForm onSearch={this.handelSearch}/>
               {renderMessage()}
+              {renderError()}
           </div>
         )
     }

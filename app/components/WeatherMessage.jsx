@@ -14,7 +14,7 @@ const WeatherMessage = ( { temp, location } ) =>{
     }
 
     return (
-      <div className="container">
+      <div className="container weather-message">
           {renderColor()}
       </div>
     );

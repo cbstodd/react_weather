@@ -17,3 +17,13 @@ a:visited {
     color: #5BC0DE;
 }
 
+.weather-message {
+    padding-top: 30px;
+}
+
+div.alert {
+    padding: 70px;
+}
+input[type=search]{
+    background-color: #f8f8f8;
+}

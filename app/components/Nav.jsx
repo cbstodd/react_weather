@@ -1,12 +1,14 @@
 const React               = require('react'),
-      { Link, IndexLink } = require('react-router');
+      { Link, IndexLink } = require('react-router'),
+      ErrorModal          = require('ErrorModal');
 
 const Nav = React.createClass({
     onSearch: function( e ){
         e.preventDefault();
-        console.log("Not yet wired");
+        console.log('Not yet wired');
     },
-    
+
+
     render: function(){
         return (
           <div>
