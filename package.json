@@ -16,7 +16,7 @@
   "author": "Colin Stodd (http://www.colinstodd.com)",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^1.12.1",
     "express": "^4.13.4",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
@@ -31,7 +31,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "bootstrap": "^4.0.0-alpha.6",
     "css-loader": "^0.28.0",
-    "node-sass": "^4.5.2",
+    "node-sass": "^9.0.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "webpack": "^1.12.13"
